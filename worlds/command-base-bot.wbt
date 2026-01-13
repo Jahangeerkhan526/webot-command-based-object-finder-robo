@@ -1,0 +1,144 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.4486139142745717 -0.49275574370331177 -0.7456120525894435 4.513998028499965
+  position 0.04033165624083258 0.6073604550157188 3.0502661269280087
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Solid {
+  translation 1.12432 1.57706 0.0532958
+  rotation 0.05586218628475011 0.10436697437588413 -0.9929687562069167 -2.935365307179586
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.2
+        metalness 0
+        emissiveColor 0 0 1
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+  name "Blue ball"
+}
+Solid {
+  translation 1.17 3.03 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 0.25
+        metalness 0
+        emissiveColor 1 1 0
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+  name "yellow ball"
+}
+Solid {
+  translation 0.31 1.6 0.09
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 1 0
+        roughness 1
+        metalness 0
+        emissiveColor 1 1 0
+      }
+      geometry Cylinder {
+        height 0.2
+        radius 0.05
+      }
+    }
+  ]
+  name "yellow cylnder"
+}
+Solid {
+  translation 0.34 3.01 0.09
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+        emissiveColor 0 0 1
+      }
+      geometry Cylinder {
+        height 0.2
+        radius 0.05
+      }
+    }
+  ]
+  name "blue cylnder"
+}
+Solid {
+  translation -0.42 1.61 0.100006
+  rotation 0 1 0 4.692820414042842e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+        emissiveColor 0 1 0
+      }
+      geometry Cone {
+        bottomRadius 0.08
+        height 0.2
+      }
+    }
+  ]
+  name "green cube"
+}
+Solid {
+  translation -0.43 3.04 0.04
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.23
+        metalness 0
+        emissiveColor 1 0 0
+        emissiveIntensity 0.5
+      }
+      geometry Sphere {
+        radius 0.06
+      }
+    }
+  ]
+  name "red ball"
+}
+E-puck {
+  hidden position_0_0 4245.7950862109565
+  hidden position_0_1 3167.242112265485
+  hidden linearVelocity_0 -0.06412817515815376 -0.07750950934824129 4.214006996971592e-08
+  hidden angularVelocity_0 0.006109377284529453 -0.005054651326594192 -1.4758605051973341e-08
+  hidden rotation_1 0 -1 0 1.6381814424439887
+  hidden linearVelocity_1 -0.06415344800046863 -0.07754005572609535 9.156209125329019e-11
+  hidden angularVelocity_1 3.8770027210161273 -3.20767244332775 8.445038844736582e-08
+  hidden rotation_2 0 1 0 0.5167174469734634
+  hidden linearVelocity_2 -0.06415344781766658 -0.0775400555205115 -8.922222969329522e-11
+  hidden angularVelocity_2 3.8770028169192576 -3.2076723273957404 -1.0253218539951234e-07
+  translation 0.5224919891392827 2.3346538173204405 -6.394973908900765e-05
+  rotation -0.0005701107818930118 -0.00026825506602269096 0.9999998015064383 -2.2619984294905597
+  controller "command-base-bot"
+}
+RectangleArena {
+  translation 0.36 2.35 0
+  floorSize 2 2
+  floorTileSize 0.4 0.4
+}
